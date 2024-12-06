@@ -1,5 +1,7 @@
 import { getContract } from "../lib/contract";
 
+export const runtime = "edge";
+
 export async function getServerSideProps(context) {
   const { shortCode } = context.params;
   const contract = getContract();
